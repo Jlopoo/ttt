@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bvp7ynpb4ehit"]
+
+[ext_resource type="Script" uid="uid://bblj7pnk6dp5j" path="res://Scripts/Main.cs" id="1_r150o"]
+
+[node name="Main" type="Node2D" unique_id=1502157745]
+script = ExtResource("1_r150o")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1721415417]
+position = Vector2(579, 323)
