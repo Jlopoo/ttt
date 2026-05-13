@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://c22iewfn6wh8t"]
 
 [ext_resource type="Texture2D" uid="uid://df8w8lnmuot5v" path="res://Assets/board.png" id="1_f0agn"]
+[ext_resource type="Script" uid="uid://h85qtiqmpmft" path="res://Scripts/GridBoard.cs" id="1_y0xtg"]
 
 [node name="GridBoard" type="Control" unique_id=337369520]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_y0xtg")
 
 [node name="Panel" type="Panel" parent="." unique_id=1906964658]
 layout_mode = 0
@@ -13,23 +15,27 @@ layout_mode = 0
 custom_minimum_size = Vector2(30, 30)
 layout_mode = 0
 offset_left = -351.0
-offset_top = -414.0
-offset_right = 449.0
-offset_bottom = 386.0
-theme_override_constants/h_separation = 400
-theme_override_constants/v_separation = 300
+offset_top = -406.0
+offset_right = 349.0
+offset_bottom = 194.0
+theme_override_constants/h_separation = 200
+theme_override_constants/v_separation = 150
 columns = 3
 
-[node name="Button" type="Button" parent="Panel/GridContainer" unique_id=688361010]
+[node name="Button1" type="Button" parent="Panel/GridContainer" unique_id=688361010]
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 
 [node name="Button2" type="Button" parent="Panel/GridContainer" unique_id=1469579164]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Button3" type="Button" parent="Panel/GridContainer" unique_id=1972899918]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Button4" type="Button" parent="Panel/GridContainer" unique_id=3730899]
+custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 
 [node name="Button5" type="Button" parent="Panel/GridContainer" unique_id=455123018]
@@ -39,6 +45,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Button7" type="Button" parent="Panel/GridContainer" unique_id=103212555]
+custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 
 [node name="Button8" type="Button" parent="Panel/GridContainer" unique_id=721709864]
@@ -49,8 +56,8 @@ layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="Panel" unique_id=197820401]
 layout_mode = 0
-offset_left = -292.0
-offset_top = -494.0
-offset_right = 508.0
-offset_bottom = 306.0
+offset_left = -370.0
+offset_top = -525.0
+offset_right = 430.0
+offset_bottom = 275.0
 texture = ExtResource("1_f0agn")
