@@ -2,7 +2,7 @@ using Godot;
 using System;
 using System.Dynamic;
 
-public partial class GameState : Node
+public partial class GameState : Node2D
 {
 	public static GameState Instance {get; private set;} = null!;
 	// Called when the node enters the scene tree for the first time.

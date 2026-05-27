@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://bblj7pnk6dp5j" path="res://Scripts/Main.cs" id="1_r150o"]
 [ext_resource type="Script" uid="uid://b56hqbtknju7p" path="res://Scripts/GameState.cs" id="2_kln2b"]
 [ext_resource type="PackedScene" uid="uid://c22iewfn6wh8t" path="res://Scenes/GridBoard.tscn" id="3_rgh2o"]
+[ext_resource type="Script" uid="uid://b14b7hepwrf5a" path="res://Scripts/PlayerController.cs" id="4_rgh2o"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_rgh2o"]
 
 [node name="Main" type="Node2D" unique_id=1502157745]
 script = ExtResource("1_r150o")
@@ -10,11 +13,25 @@ script = ExtResource("1_r150o")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1721415417]
 position = Vector2(579, 323)
 
-[node name="GameState" type="Node" parent="." unique_id=1221625590]
-script = ExtResource("2_kln2b")
-
 [node name="GridBoard" parent="." unique_id=337369520 instance=ExtResource("3_rgh2o")]
 offset_left = 504.0
 offset_top = 416.37952
 offset_right = 504.0
 offset_bottom = 416.37952
+
+[node name="PlayerController" type="Node2D" parent="." unique_id=1464180673]
+script = ExtResource("4_rgh2o")
+
+[node name="GameState" type="Node2D" parent="." unique_id=1491088108]
+script = ExtResource("2_kln2b")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=342818387]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=672434946]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_rgh2o")

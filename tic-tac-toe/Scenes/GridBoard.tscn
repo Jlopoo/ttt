@@ -55,6 +55,7 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="Panel" unique_id=197820401]
+z_index = -1
 layout_mode = 0
 offset_left = -370.0
 offset_top = -525.0
